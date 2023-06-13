@@ -1,9 +1,9 @@
 - type: embed
   embeds:
-    - title: Welcome to the Create: Steam 'n' Rails Discord server!
+    - title: "Welcome to the Create: Steam 'n' Rails Discord server!"
       url: https://https://modrinth.com/mod/create-steam-n-rails
       color: 0xdfdfdf
-      description: Create: Steam 'n' Rails is a mod that adds onto the create trains system!
+      description: "Create: Steam 'n' Rails is a mod that adds onto the create trains system!"
       image:
         url: https://cdn.modrinth.com/data/ZzjhlDgM/23d42e3d1c878cb77f9e74a3f78fed2d011ed937.png
         width: 600
