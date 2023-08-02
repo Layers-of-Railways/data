@@ -1,4 +1,5 @@
 {
-  "uuid": "color",
-  "e67eb09a-b5af-4822-b756-9065cdc49913": "red"
+  "dev": [
+    "uuid"
+  ]
 }
