@@ -1,0 +1,25 @@
+- type: embed
+
+  embeds:
+    - description: Below You can Choose your roles!\nTester is for if you want to be pinged when we need the mod tested.\n Major and Minor Pings are for updates\n Server Player is for if you want to play on our community server!
+      title: Roles
+      color: 0xFF0000
+
+- type: roles
+  id: roles
+  title: Community roles
+  template: "**»** {EMOJI} {MENTION}"
+
+  roles:
+    1081242190988202064:
+      description: Tester
+      emoji: "<:TheyWrench:836998587997093918>"
+    1072269962267340831:
+      description: Major Update Ping
+      emoji: "<:TheyTrain:859619862234005505>"
+    1072270030584156160:
+      description: Minor Update Ping
+      emoji: "<:TheyStand:837726778394148875>"
+    1081592689474162688:
+      description: Server Player
+      emoji: "<:TheyWave:839961691382480950>"
