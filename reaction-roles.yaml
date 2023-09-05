@@ -1,10 +1,10 @@
 - type: embed
   embeds:
     - description: |
-        Below You can Choose your roles!
-        Tester is for if you want to be pinged when we need the mod tested.
-        Major and Minor Pings are for updates
-        Server Player is for if you want to play on our community server!
+        **Below You can Choose your roles!**
+        <@&1081242190988202064> is for if you want to be pinged when we need the mod tested.
+        <@&1072269962267340831> And <@&1072270030584156160> are for updates
+        <@&1081592689474162688> is for if you want to play on our community server!
       title: Roles
       color: 0x476cf0
 
