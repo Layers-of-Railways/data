@@ -1,7 +1,8 @@
 - type: embed
   color: 0x476cf0
   embeds:
-    - description: Below You can Choose your roles!
+    - description: |
+        Below You can Choose your roles!
         Tester is for if you want to be pinged when we need the mod tested.
         Major and Minor Pings are for updates
         Server Player is for if you want to play on our community server!
