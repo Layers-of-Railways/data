@@ -1,13 +1,9 @@
 - type: embed
   embeds:
-    - title: "Welcome to the Create: Steam 'n' Rails Discord server!"
+    - title: "Welcome to the Steam 'n' Rails Discord server!"
       url: https://modrinth.com/mod/create-steam-n-rails
       color: 0xdfdfdf
       description: "Create: Steam 'n' Rails is a mod that adds onto the create trains system!"
-      image:
-        url: https://raw.githubusercontent.com/Layers-of-Railways/welcome-channel/e84d2b8c3af8d42cd2674c893400a7b6a3242ee5/RailwaysLogo.png
-        width: 600
-        height: 600
 
 - type: rules
   rules:
@@ -17,7 +13,6 @@
     Do not harass anyone: "We want to make participation in our community a harassment-free experience for everyone. If you think that someone is breaking the rules, contact the moderators, instead of harassing them."
     Keep all activity legal, legitimate, and appropriate: "We do not tolerate users breaking any laws, breaching a ToS or an EULA, posting sexual content, or anything the moderators determine to be malicious or inappropriate. Shilling crypto currency related products and gambling websites is strictly forbidden."
     Follow the given channel topic: "Don't derail a discussion, and don't start conversations outside of the channel in which they're most appropriate. For example, if you start to get off-topic in an on-topic channel, ask other participants to move to an off-topic channels. Advertisements are not allowed outside of showcase channels."
-    Don't import drama or controversy from other communities: "In these topics, emotions run high and opinions run even higher. To avoid arguments and other similar problems, simply avoid discussion of controversial topics from other communities."
 
 - type: links
   title: ":link: Links"
@@ -26,9 +21,7 @@
     Modrinth: https://modrinth.com/mod/create-steam-n-rails
     Curseforge: https://www.curseforge.com/minecraft/mc-mods/create-steam-n-rails
     Source code: https://github.com/Layers-of-Railways/Railway
-
-- type: text
-  text: https://discord.gg/md78MGbEfK
+    Discord Invite: https://discord.gg/md78MGbEfK
 
 - type: embed
   embeds:
