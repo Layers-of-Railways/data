@@ -55,6 +55,9 @@ if __name__ == "__main__":
     update_parser.add_argument("-u", "--uuid", action="store_true",
                                help="Treat the identifier as a UUID")
 
+    # List subcommand
+    list_parser = subparsers.add_parser("list", help="List users with capes")
+
 
     args = parser.parse_args(sys.argv[1:])
 
@@ -62,6 +65,8 @@ if __name__ == "__main__":
         full_data: dict[str, Any] = json.load(f)
 
     dev_capes: list[dict[str, str]] = full_data["dev"]
+
+    write = True
 
     if args.command == "add":
         if args.uuid:
@@ -103,21 +108,35 @@ if __name__ == "__main__":
             else:
                 print(f"Removed cape from {args.identifier}")
     elif args.command == "update":
+        any = False
         for entry in dev_capes:
             if args.identifier:
                 if args.uuid and normalize_uuid(entry["id"]) != normalize_uuid(args.identifer):
                     continue
                 if not args.uuid and entry["name"] != args.identifier:
                     continue
+            any = True
             print(f"Updating username for {entry['name']} ({entry['id']})")
+            old_name = entry["name"]
             entry["name"] = uuid_to_uname(entry["name"])
-            print(f"New username: {entry['name']}")
+            if entry["name"] == old_name:
+                print("> Unchanged")
+            else:
+                print(f"> New username: {entry['name']}")
+        if not any:
+            print(f"Could not find user {args.identifier}")
+    elif args.command == "list":
+        write = False
+        print("Cape holders:")
+        for entry in dev_capes:
+            print(f"\t[{entry['id']}] {entry['name']}")
     else:
         raise ValueError(f"Invalid command {args.command}")
 
-    dev_capes = sorted(dev_capes, key=lambda v: v["id"])
+    if write:
+        dev_capes = sorted(dev_capes, key=lambda v: v["id"])
 
-    full_data["dev"] = dev_capes
+        full_data["dev"] = dev_capes
 
-    with open("dev_capes.json", "w") as f:
-        json.dump(full_data, f, indent=4)
+        with open("dev_capes.json", "w") as f:
+            json.dump(full_data, f, indent=4)
